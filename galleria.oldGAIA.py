@@ -10,10 +10,11 @@ class Quadro:
         if(nuovo_anno>1853 & nuovo_anno<1890):
            self.__anno = nuovo_anno
         else:
-            print("L'anno inserito non è validpo)
+            print("L'anno inserito non è valido")
 
     def leggi_anno(self):
         return self.__anno
+
 
 q1 = Quadro("Van Gogh", "Autoritratto", "Olio su tela", "1870")
 
@@ -27,4 +28,6 @@ q1.imposta_anno(1800)
 
 #print(f"{q1.__artista} {q1.__titolo} {q1.__materiali} - {q1.__anno}")
 print("Anno: "+str(q1.leggi_anno()))
+
+
 
